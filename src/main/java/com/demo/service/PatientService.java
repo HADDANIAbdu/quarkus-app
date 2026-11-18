@@ -15,6 +15,6 @@ public class PatientService {
     }
 
     public Patient findByPatientIdentifier(String patientIdentifier) {
-        return patientRepo.find("patientIdentifier", patientIdentifier).firstResult();
+        return patientRepo.find("patientId", patientIdentifier).firstResult();
     }
 }
